@@ -12,9 +12,10 @@
 
 .container {
   margin: auto;
+  border: solid 2px var(--color-gray-800);
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0px 0px 5px var(--color-gray-300);
+  /* box-shadow: 0px 0px 5px var(--color-gray-300); */
   display: flex;
   flex-wrap: wrap;
   width: 1000px;

@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Federo&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,7 +7,8 @@
 }
 
 :root {
-  font-family: "Montserrat", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  /* font-family: "Federo", sans-serif; */
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -59,6 +58,16 @@ ul {
 li {
   list-style: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Federo", sans-serif;
+  color: var(--color-gray-800);
+}
 h1 {
   font-size: 50px;
 }
@@ -74,32 +83,42 @@ h6 {
   font-size: 18px;
   font-weight: 500;
 }
+p {
+  color: var(--color-gray-800);
+}
 
 button {
   padding: 0.5rem 2rem;
-  border-radius: 50px;
+  border-radius: 5px;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 2px 2px 0 var(--color-gray-900);
 }
 
 button.primary {
-  color: white;
-  background-color: var(--color-primary-500);
-  border: none;
+  color: var(--color-gray-800);
+  background-color: var(--color-primary-200);
+  border: solid 2px var(--color-gray-800);
 }
 
 button.primary:hover {
-  background-color: var(--color-primary-600);
+  /* color: var(--color-primary-200); */
+  /* background-color: var(--color-gray-800); */
+  box-shadow: 2px 2px 0 var(--color-gray-900);
 }
 
 button.secondary {
-  color: var(--color-primary-600);
+  color: var(--color-gray-800);
   background-color: transparent;
-  border: solid 3px var(--color-primary-600);
+  border: solid 2px var(--color-gray-800);
 }
 
 button.secondary:hover {
-  background-color: var(--color-primary-600);
-  color: white;
+  /* background-color: var(--color-primary-200); */
+  box-shadow: 2px 2px 0 var(--color-gray-900);
 }

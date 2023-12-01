@@ -11,25 +11,35 @@ h3 {
 }
 
 .plans-sec menu {
-  background-color: beige;
+  background-color: var(--color-primary-50);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
+  border-bottom: solid 2px var(--color-gray-800);
 }
 
 .plans-sec li {
   list-style: none;
 }
 
+.plans-sec button {
+  border: 0;
+  border-radius: 5px 5px 0 0;
+  background-color: var(--color-gray-200);
+}
+
 .plans-sec button:hover {
-  background-color: var(--color-primary-100);
-  border-radius: 5px;
+  box-shadow: none;
+  background-color: var(--color-primary-200);
 }
 
 .plans-sec button.active {
-  background-color: var(--color-primary-500);
-  border-radius: 5px;
-  color: white;
+  background-color: var(--color-gray-800);
+  color: var(--color-primary-200);
+  /* border-top: solid 2px var(--color-gray-800);
+  border-left: solid 2px var(--color-gray-800);
+  border-right: solid 2px var(--color-gray-800); */
 }
 
 .plans {

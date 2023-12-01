@@ -5,10 +5,10 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 0.5rem;
-  /* border: solid 1px var(--color-gray-300); */
+  border: solid 2px var(--color-gray-800);
   border-radius: 10px;
   padding: 2rem 4rem;
-  box-shadow: 1px 1px 5px var(--color-gray-300);
+  /* box-shadow: 1px 1px 5px var(--color-gray-300); */
 }
 
 .plan li {
@@ -16,5 +16,7 @@
 }
 
 .plan:hover {
-  border: solid 2px var(--color-primary-500);
+  /* border: solid 2px var(--color-primary-500); */
+  background-color: var(--color-primary-200);
+  box-shadow: 2px 2px 0 var(--color-gray-800);
 }

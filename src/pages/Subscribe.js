@@ -1,6 +1,6 @@
 import classes from "./Subscribe.module.css";
 import { useState } from "react";
-import { PLANS } from "../components/home/Data";
+// import { PLANS } from "../components/home/Data";
 
 export default function Subscribe() {
   const [plan, setPlan] = useState({
