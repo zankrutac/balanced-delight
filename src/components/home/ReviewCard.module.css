@@ -1,0 +1,23 @@
+.review {
+  border: solid 1px var(--color-gray-200);
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1 1 250px;
+}
+
+.author-section {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.author-img {
+  max-width: 15%;
+  border-radius: 50px;
+}
+
+.author-section p {
+  font-size: 1.1rem;
+}

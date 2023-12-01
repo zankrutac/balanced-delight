@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--color-gray-800);
+  color: white;
+  padding: 3rem;
+}
+
+.footer ul {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  color: White;
+}

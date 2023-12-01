@@ -1,13 +1,105 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-gray-100: #f4f3f1;
+  --color-gray-200: #dddbd8;
+  --color-gray-300: #ccc9c6;
+  --color-gray-400: #aeaba7;
+  --color-gray-500: #8a8784;
+  --color-gray-600: #656360;
+  --color-gray-700: #4b4a47;
+  --color-gray-800: #31302e;
+  --color-gray-900: #1f1d1b;
+
+  --color-primary-50: #fdfff0;
+  --color-primary-100: #dee7b3;
+  --color-primary-200: #cfdb8f;
+  --color-primary-300: #b9cb5c;
+  --color-primary-400: #abc13c;
+  --color-primary-500: #96b10b;
+  --color-primary-600: #89a10a;
+  --color-primary-700: #6b7e08;
+  --color-primary-800: #536106;
+  --color-primary-900: #3f4a05;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button.primary {
+  color: white;
+  background-color: var(--color-primary-500);
+  border: none;
+}
+
+button.primary:hover {
+  background-color: var(--color-primary-600);
+}
+
+button.secondary {
+  color: var(--color-primary-600);
+  background-color: transparent;
+  border: solid 3px var(--color-primary-600);
+}
+
+button.secondary:hover {
+  background-color: var(--color-primary-600);
+  color: white;
 }

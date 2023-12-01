@@ -1,0 +1,42 @@
+.hero {
+  /* background-color: var(--color-gray-50); */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.left {
+  flex: 1 1 450px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.heading {
+  font-size: 50px;
+  line-height: 3rem;
+  color: var(--color-gray-800);
+}
+
+.paragraph {
+  color: var(--color-gray-700);
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.right {
+  flex: 1 1 450px;
+  padding: 2rem;
+  align-self: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: auto;
+}

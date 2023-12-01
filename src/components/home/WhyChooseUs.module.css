@@ -1,0 +1,17 @@
+.section2 {
+  background-color: var(--color-primary-50);
+}
+
+.section2 h2 {
+  text-align: center;
+  line-height: 1;
+  padding: 2rem;
+}
+
+.reasons {
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}

@@ -1,0 +1,12 @@
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.card h3 {
+  padding-bottom: 1rem;
+}

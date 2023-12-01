@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+}
+
+.reason {
+  border-bottom: 1px solid var(--color-gray-400);
+  margin: 0;
+  flex: 1 1 max(200px, 40%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+.reason h6 {
+  color: var(--color-primary-500);
+}
+.reason p {
+  color: var(--color-gray-800);
+}

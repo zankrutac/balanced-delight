@@ -1,0 +1,51 @@
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary-100);
+}
+
+.container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+.image {
+  width: 400px;
+  height: auto;
+  justify-self: center;
+  border-radius: 2000px;
+}
+
+.right {
+  padding: 4rem 4rem;
+  color: var(--color-gray-800);
+}
+
+.right h2 {
+  padding-bottom: 2rem;
+}
+
+.section2 {
+  padding: 2rem;
+  color: var(--color-gray-800);
+}
+
+.section2 h3 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.subsec {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 4rem;
+}
+
+.subsec p {
+  padding: 0 1rem;
+}

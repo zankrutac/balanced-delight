@@ -1,0 +1,40 @@
+.plans-sec {
+  padding: 2rem;
+  margin: auto;
+  width: 100%;
+}
+
+.plans-sec h2,
+h3 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.plans-sec menu {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plans-sec li {
+  list-style: none;
+}
+
+.plans-sec button:hover {
+  background-color: var(--color-primary-100);
+  border-radius: 5px;
+}
+
+.plans-sec button.active {
+  background-color: var(--color-primary-500);
+  border-radius: 5px;
+  color: white;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}

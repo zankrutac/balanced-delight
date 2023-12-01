@@ -1,0 +1,16 @@
+.values-sec {
+  padding: 2rem;
+  text-align: center;
+  background-color: beige;
+}
+
+.values-sec h2 {
+  padding: 2rem 0;
+}
+
+.values {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}

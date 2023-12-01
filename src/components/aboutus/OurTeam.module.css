@@ -1,0 +1,24 @@
+.team-sec {
+  /* background-color: azure */
+  padding: 2rem 4rem;
+}
+
+.team-intro h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.team-intro p {
+  text-align: center;
+  padding: 2rem 8rem;
+}
+
+.team {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
