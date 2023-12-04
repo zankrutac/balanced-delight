@@ -19,7 +19,13 @@ function HeroSection() {
         </div>
       </div>
       <div className={classes.right}>
-        <img className={classes["hero-img"]} src={heroImage} alt="tiffin box" />
+        <div className={classes["img-frame"]}>
+          <img
+            className={classes["hero-img"]}
+            src={heroImage}
+            alt="tiffin box"
+          />
+        </div>
       </div>
     </section>
   );

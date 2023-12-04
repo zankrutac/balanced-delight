@@ -36,7 +36,13 @@
   align-self: center;
 }
 
+.img-frame {
+  border: solid 2px var(--color-gray-800);
+  rotate: 3deg;
+}
+
 .hero-img {
   width: 100%;
   max-height: auto;
+  rotate: -3deg;
 }

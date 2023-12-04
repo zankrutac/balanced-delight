@@ -41,11 +41,8 @@ function PlansSection() {
 
         <ul className={classes.plans}>
           {PLANS.filter((plan) => plan.type === selectedMeal).map((plan) => (
-            <PlanCard key={plan.id} plan={plan} />
+            <PlanCard key={plan.name} plan={plan} />
           ))}
-          {/* {PLANS[selectedMeal].map((plan, i) => (
-            <PlanCard key={i} plan={plan} />
-          ))} */}
         </ul>
       </div>
     </Section>
