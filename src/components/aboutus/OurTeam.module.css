@@ -1,24 +1,25 @@
 .team-sec {
-  /* background-color: azure */
-  padding: 2rem 4rem;
+  padding: 2rem;
 }
 
-.team-intro h2 {
+.heading {
   text-align: center;
-  padding: 2rem 0;
+  line-height: 1;
+  padding-bottom: 2rem;
 }
 
-.team-intro p {
+.text {
+  font-size: 18px;
   text-align: center;
-  padding: 2rem 8rem;
+  line-height: 1.3;
+  padding-bottom: 2rem;
 }
 
 .team {
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
+  gap: 2rem;
 }

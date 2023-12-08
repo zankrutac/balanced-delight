@@ -36,7 +36,9 @@ function PlansSection() {
       </menu>
       <div>
         <h3>
-          {selectedMeal === "veg" ? "Vegetarian Plans" : "Non-Vegetarian Plans"}
+          {selectedMeal === "veg"
+            ? " Vegetarian Plans"
+            : " Non-Vegetarian Plans"}
         </h3>
 
         <ul className={classes.plans}>

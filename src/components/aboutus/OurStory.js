@@ -5,8 +5,8 @@ function OurStory() {
   return (
     <div className={classes["story-container"]}>
       <div className={classes.left}>
-        <h2>Our Story</h2>
-        <p>
+        <h2 className={classes.heading}>Our Story</h2>
+        <p className={classes.text}>
           At Balanced Delights, every meal is a crafted masterpiece infused with
           love and passion. Founded in 2019, we started with a small kitchen and
           a big dream: to redefine the tiffin service experience. Our founder,
@@ -14,7 +14,9 @@ function OurStory() {
           but also ensures every bite brings joy and health.
         </p>
       </div>
-      <img className={classes.right} src={founder} alt="founder" />
+      <div className={classes.right}>
+        <img className={classes["story-img"]} src={founder} alt="founder" />
+      </div>
     </div>
   );
 }

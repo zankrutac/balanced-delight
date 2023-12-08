@@ -68,8 +68,8 @@ function OurTeam() {
   return (
     <div className={classes["team-sec"]}>
       <div className={classes["team-intro"]}>
-        <h2>Meet Our Team</h2>
-        <p>
+        <h2 className={classes.heading}>Meet Our Team</h2>
+        <p className={classes.text}>
           Behind every delicious meal is a dedicated team passionate about
           creating a delightful dining experience. Get to know the faces and
           stories of the chefs, nutritionists, and individuals who contribute to
