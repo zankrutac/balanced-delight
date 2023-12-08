@@ -15,7 +15,7 @@ function HeroSection() {
         </p>
         <div className={classes.buttons}>
           <button className="primary">Order Now</button>
-          <button className="secondary">Explore Plans</button>
+          {/* <button className="secondary">Explore Plans</button> */}
         </div>
       </div>
       <div className={classes.right}>
