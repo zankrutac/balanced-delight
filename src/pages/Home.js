@@ -1,15 +1,17 @@
 import HeroSection from "../components/home/Hero";
 import WhyChooseUs from "../components/home/WhyChooseUs";
-import PlansSection from "../components/home/PlansSection";
 import CustomerReviews from "../components/home/CustomerReviews";
+import HowItWorks from "../components/home/HowItWorks";
+import FinalCTASection from "../components/home/FinalCTASection";
 
 function HomePage() {
   return (
     <>
       <HeroSection />
       <WhyChooseUs />
-      <PlansSection />
+      <HowItWorks />
       <CustomerReviews />
+      <FinalCTASection />
     </>
   );
 }

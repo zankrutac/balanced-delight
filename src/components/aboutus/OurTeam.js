@@ -25,7 +25,7 @@ const TEAM = [
   {
     image: nutritionistImage,
     name: "AISHA KHAN",
-    designation: "Nutritionist & Menu Planner",
+    designation: "Nutritionist",
   },
   {
     image: opsManagerImage,
@@ -50,7 +50,7 @@ const TEAM = [
   {
     image: qaManagerImage,
     name: "HARU YAMANAKA",
-    designation: "Quality Assurance Manager",
+    designation: "QA Manager",
   },
   {
     image: deliveryCoordImage,
@@ -67,19 +67,21 @@ const TEAM = [
 function OurTeam() {
   return (
     <div className={classes["team-sec"]}>
-      <div className={classes["team-intro"]}>
-        <h2 className={classes.heading}>Meet Our Team</h2>
-        <p className={classes.text}>
-          Behind every delicious meal is a dedicated team passionate about
-          creating a delightful dining experience. Get to know the faces and
-          stories of the chefs, nutritionists, and individuals who contribute to
-          making Balanced Delights what it is today.
-        </p>
-      </div>
-      <div className={classes.team}>
-        {TEAM.map((teammate, i) => (
-          <PersonCard key={i} person={teammate} />
-        ))}
+      <div className={classes["team-container"]}>
+        <div className={classes["team-intro"]}>
+          <h2 className={classes.heading}>Meet Our Team</h2>
+          <p className={classes.text}>
+            Behind every delicious meal is a dedicated team passionate about
+            creating a delightful dining experience. Get to know the faces and
+            stories of the chefs, nutritionists, and individuals who contribute
+            to making Balanced Delights what it is today.
+          </p>
+        </div>
+        <div className={classes.team}>
+          {TEAM.map((teammate, i) => (
+            <PersonCard key={i} person={teammate} />
+          ))}
+        </div>
       </div>
     </div>
   );

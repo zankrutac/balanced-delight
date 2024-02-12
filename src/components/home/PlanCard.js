@@ -12,7 +12,10 @@ function PlanCard(props) {
         <p>per month</p>
       </header>
 
-      <Link to="/subscribe" className={classes[`${bgColor}`]}>
+      <Link
+        to={`/subscribe/${props.plan.id}`}
+        className={classes[`${bgColor}`]}
+      >
         Customize
       </Link>
 

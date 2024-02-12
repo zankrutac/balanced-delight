@@ -1,6 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import classes from "./JoinUs.module.css";
 
 function JoinUs() {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/plans");
+  }
   return (
     <div className={classes.container}>
       <h2>Join Us on Our Culinary Journey</h2>
@@ -10,7 +15,9 @@ function JoinUs() {
         to quality, and experience the balanced delight in every bite.
       </p>
       <div className={classes.cta}>
-        <button class="primary">Explore Plans</button>
+        <button class="primary" onClick={handleClick}>
+          Explore Plans
+        </button>
         <button class="secondary">Contact Us</button>
       </div>
     </div>

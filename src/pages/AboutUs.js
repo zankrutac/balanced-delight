@@ -8,7 +8,7 @@ import JoinUs from "../components/aboutus/JoinUs";
 function AboutUsPage() {
   return (
     <>
-      <Hero />;
+      <Hero />
       <OurStory />
       <OurMission />
       <OurTeam />

@@ -1,0 +1,49 @@
+.modal-container {
+  padding: 2rem;
+  width: 70vw;
+  margin: auto;
+  background-color: white;
+  border: solid 5px green;
+  border-radius: 10px;
+  z-index: 2;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  padding: 0;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--color-gray-700);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  box-shadow: none;
+  color: var(--color-gray-900);
+}
+
+.check-icon {
+  padding: 1rem;
+  color: green;
+}
+
+.heading {
+  padding: 2rem 0;
+}
+
+.modal-container p {
+  padding: 1rem;
+}
+
+/* @media screen and (max-width: 768px) {
+  .modal-container {
+    left: 0;
+    width: 90vw;
+    margin: 0 1rem;
+  }
+} */

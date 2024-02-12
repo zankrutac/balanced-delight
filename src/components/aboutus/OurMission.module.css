@@ -3,6 +3,8 @@
   background-color: var(--color-primary-100);
 }
 .section1 {
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -10,8 +12,13 @@
 }
 
 .left {
-  flex: 1 1 400px;
+  flex: 1 1 30%;
   padding: 2rem;
+}
+
+.mission-img {
+  width: 100%;
+  height: auto;
 }
 
 .heading {
@@ -25,21 +32,22 @@
   color: var(--color-gray-700);
 }
 
-.right {
-  flex: 1 1 400px;
-  padding: 2rem;
+.section2 {
+  width: 70%;
+  margin: auto;
 }
 
-.mission-img {
-  width: 100%;
-  height: auto;
+.right {
+  flex: 1 1 40%;
+  padding: 2rem;
 }
 
 .subsec {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 1rem;
 }
 
 .subsec-text {

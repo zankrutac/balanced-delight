@@ -10,17 +10,11 @@ export default function MainNavigation() {
     setIsMenuOpen((prevState) => setIsMenuOpen(!prevState));
   }
   return (
-    <header className={classes.header}>
+    <header className={classes["navbar-container"]}>
       <Link to="/">
         <img className={classes.logo} src={logo} alt="Balanced Delights" />
       </Link>
-      <button className={classes["menu-icon"]} onClick={handleToggleMenu}>
-        <i
-          className={
-            isMenuOpen ? "fa-solid fa-xmark fa-xl" : "fa-solid fa-bars fa-xl"
-          }
-        ></i>
-      </button>
+
       <nav>
         <ul className={`${classes.nav} ${isMenuOpen ? classes.open : ""}`}>
           <li>
@@ -55,6 +49,13 @@ export default function MainNavigation() {
           </li>
         </ul>
       </nav>
+      <button className={classes["menu-icon"]} onClick={handleToggleMenu}>
+        <i
+          className={
+            isMenuOpen ? "fa-solid fa-xmark fa-xl" : "fa-solid fa-bars fa-xl"
+          }
+        ></i>
+      </button>
     </header>
   );
 }

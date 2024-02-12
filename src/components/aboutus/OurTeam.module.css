@@ -2,6 +2,11 @@
   padding: 2rem;
 }
 
+.team-container {
+  width: 80%;
+  margin: auto;
+}
+
 .heading {
   text-align: center;
   line-height: 1;
@@ -9,10 +14,12 @@
 }
 
 .text {
+  width: 80%;
+  margin: auto;
   font-size: 18px;
   text-align: center;
   line-height: 1.3;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .team {

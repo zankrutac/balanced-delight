@@ -1,26 +1,20 @@
-.hero {
+.hero-container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: center;
 }
 
-.left {
-  flex: 1 1 450px;
-  padding: 2rem;
+.left-container {
+  flex: 1 1 50%;
+  padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3rem;
-}
-
-.heading {
-  font-size: 50px;
-  line-height: 3rem;
-  color: var(--color-gray-800);
+  gap: 2rem;
 }
 
 .paragraph {
-  color: var(--color-gray-700);
+  font-size: 1.25rem;
 }
 
 .buttons {
@@ -29,19 +23,21 @@
   gap: 2rem;
 }
 
-.right {
-  flex: 1 1 450px;
-  padding: 2rem;
-  align-self: center;
-}
-
-.img-frame {
-  border: solid 2px var(--color-gray-800);
-  rotate: 3deg;
+.right-container {
+  flex: 1 1 30%;
+  padding: 2rem 4rem;
+  position: relative;
 }
 
 .hero-img {
+  padding: 2rem;
   width: 100%;
-  max-height: auto;
-  rotate: -3deg;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .right-container {
+    display: block;
+  }
 }

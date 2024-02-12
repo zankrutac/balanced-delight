@@ -1,8 +1,31 @@
 .review {
-  border: solid 1px var(--color-gray-200);
+  border: solid 2px var(--color-gray-900);
   padding: 2rem;
   border-radius: 10px;
   flex: 1 1 250px;
+  box-shadow: 2px 2px black;
+}
+
+/* .shadow0 {
+  box-shadow: 6px 6px #e8c7ff;
+}
+.shadow1 {
+  box-shadow: 6px 6px #cbffda;
+}
+.shadow2 {
+  box-shadow: 6px 6px #ffbe9b;
+} */
+
+.bg-color1 {
+  background-color: #ffd2a1;
+}
+
+.bg-color0 {
+  background-color: #e3dff2;
+}
+
+.bg-color2 {
+  background-color: #fcdfff;
 }
 
 .author-section {

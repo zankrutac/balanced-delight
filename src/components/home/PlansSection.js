@@ -1,9 +1,7 @@
 import classes from "./PlansSection.module.css";
 import PlanCard from "./PlanCard";
 import { useState } from "react";
-import { PLANS } from "./Data";
-import Section from "../Section";
-import Button from "../Button";
+import { PLANS } from "../../Data";
 
 function PlansSection() {
   const [selectedMeal, setSelectedMeal] = useState("veg");
@@ -13,29 +11,32 @@ function PlansSection() {
   }
 
   return (
-    <Section title="Find Your Plan" className={classes["plans-sec"]}>
+    <section className={classes["plans-sec"]}>
+      <h2>Find Your Plan</h2>
       <menu>
         <li>
-          <Button
-            title="Vegetarian"
+          <button
             className={selectedMeal === "veg" ? classes.active : undefined}
             onClick={() => {
               handleClick("veg");
             }}
-          />
+          >
+            Vegetarian
+          </button>
         </li>
         <li>
-          <Button
-            title="Non-Vegetarian"
+          <button
             className={selectedMeal === "non-veg" ? classes.active : undefined}
             onClick={() => {
               handleClick("non-veg");
             }}
-          />
+          >
+            Non-Vegetarian
+          </button>
         </li>
       </menu>
       <div>
-        <h3>
+        <h3 className={classes["menu-tabs"]}>
           {selectedMeal === "veg"
             ? " Vegetarian Plans"
             : " Non-Vegetarian Plans"}
@@ -47,7 +48,7 @@ function PlansSection() {
           ))}
         </ul>
       </div>
-    </Section>
+    </section>
   );
 }
 

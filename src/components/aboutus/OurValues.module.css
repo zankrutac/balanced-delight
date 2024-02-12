@@ -1,16 +1,23 @@
 .values-sec {
+  background-color: #b9e8f8;
+}
+
+.values-container {
   padding: 2rem;
   text-align: center;
-  background-color: beige;
+  width: 80%;
+  margin: auto;
 }
 
 .values-sec h2 {
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 .values {
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }

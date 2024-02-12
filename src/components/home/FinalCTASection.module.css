@@ -1,0 +1,15 @@
+.final-sec-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(255, 252, 233);
+}
+
+.final-sec-heading {
+  padding-bottom: 1rem;
+}
+
+.final-sec-subtext {
+  max-width: 1080px;
+  margin: auto;
+  padding: 2rem;
+}

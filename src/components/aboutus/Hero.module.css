@@ -1,5 +1,14 @@
 .hero {
+  background: url(../../assets/aboutus-hero-image.png);
+  background-size: cover;
+  height: 50vh;
+}
+
+.bg-overlay {
   padding: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-text {
@@ -10,10 +19,12 @@
 
 .heading {
   line-height: 1;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  color: white;
 }
 
 .text {
+  color: white;
   font-size: 18px;
   line-height: 1.3;
 }

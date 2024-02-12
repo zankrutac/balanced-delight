@@ -9,6 +9,8 @@
 }
 
 .container p {
+  width: 70%;
+  margin: auto;
   padding: 2rem;
   font-size: 18px;
 }
@@ -18,5 +20,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }

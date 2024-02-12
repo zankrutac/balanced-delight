@@ -1,21 +1,28 @@
-* {
-  margin: 0;
-}
-
-.reason {
-  border-bottom: 1px solid var(--color-gray-400);
-  margin: 0;
+.reason-card-container {
   flex: 1 1 max(200px, 40%);
+
+  background-color: white;
+  border: solid 2px var(--color-gray-800);
+  border-radius: 10px;
+  padding: 2rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
-  padding-bottom: 1rem;
-  padding-top: 2rem;
+
+  text-align: center;
 }
-.reason h6 {
-  color: var(--color-primary-500);
+
+.reason-card-container div {
+  width: 80px;
 }
-.reason p {
-  color: var(--color-gray-800);
+
+.reason-card-container img {
+  width: 100%;
+}
+
+.reason-card-container h3 {
+  font-size: 1.5rem;
 }

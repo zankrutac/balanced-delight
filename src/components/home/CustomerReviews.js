@@ -1,11 +1,11 @@
 import classes from "./CustomerReviews.module.css";
 import ReviewCard from "./ReviewCard";
-import { REVIEWS } from "./Data";
-import Section from "../Section";
+import { REVIEWS } from "../../Data";
 
 function CustomerReviews() {
   return (
-    <Section title="Our Customers speak for us" className={classes.reviews}>
+    <section className={classes.reviews}>
+      <h2>Our Customers speak for us</h2>
       <div className={classes.container}>
         {/* <button>
           <i class="fa-solid fa-arrow-left"></i>
@@ -24,7 +24,7 @@ function CustomerReviews() {
           <i class="fa-solid fa-arrow-right"></i>
         </button> */}
       </div>
-    </Section>
+    </section>
   );
 }
 

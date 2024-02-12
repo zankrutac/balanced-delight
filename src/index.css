@@ -10,18 +10,6 @@
   font-family: "DM Sans", sans-serif;
   /* font-family: "Federo", sans-serif; */
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: #242424; */
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 
   --color-gray-100: #f4f3f1;
   --color-gray-200: #dddbd8;
@@ -31,12 +19,12 @@
   --color-gray-600: #656360;
   --color-gray-700: #4b4a47;
   --color-gray-800: #31302e;
-  --color-gray-900: #1f1d1b;
+  --color-gray-900: #131313;
 
   /* --color-primary-50: #fdfff0; */
   --color-primary-50: #f4fad2;
   --color-primary-100: #dee7b3;
-  --color-primary-200: #cfdb8f;
+  --color-primary-200: #dbe892;
   --color-primary-300: #b9cb5c;
   --color-primary-400: #abc13c;
   --color-primary-500: #96b10b;
@@ -49,6 +37,11 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  color: var(--color-gray-900);
+}
+
+main {
+  padding-top: 4rem;
 }
 
 ul {
@@ -67,32 +60,33 @@ h4,
 h5,
 h6 {
   font-family: "Federo", sans-serif;
-  color: var(--color-gray-800);
+  font-weight: normal;
+  color: var(--color-gray-900);
 }
 h1 {
-  font-size: 50px;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 h6 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 p {
-  color: var(--color-gray-800);
+  color: var(--color-gray-900);
 }
 
 button {
-  padding: 0.5rem 2rem;
+  padding: 0.5em 2em;
   border-radius: 5px;
   font-family: inherit;
   font-size: 1rem;

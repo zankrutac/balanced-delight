@@ -2,9 +2,11 @@ import classes from "./ReasonCard.module.css";
 
 function ReasonCard({ details }) {
   return (
-    <li className={classes.reason}>
-      <h6>{details.number}</h6>
-      <h4>{details.title}</h4>
+    <li className={classes["reason-card-container"]}>
+      <div>
+        <img src={details.image} alt={details.title} />
+      </div>
+      <h3>{details.title}</h3>
       <p>{details.description}</p>
     </li>
   );

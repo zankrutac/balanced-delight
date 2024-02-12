@@ -1,31 +1,33 @@
-import heroImage from "../../assets/hero-image.png";
+import { useNavigate } from "react-router-dom";
+import heroImage from "../../assets/group-46.png";
 import classes from "./Hero.module.css";
 
 function HeroSection() {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("plans");
+  }
   return (
-    <section className={classes.hero}>
-      <div className={classes.left}>
-        <h1 className={classes.heading}>Experience Home-cooked Goodness</h1>
+    <section className={classes["hero-container"]}>
+      <div className={classes["left-container"]}>
+        <h1>Experience Home-cooked Goodness</h1>
         <p className={classes.paragraph}>
-          Our food subscription box offers a hassle-free way for Indian working
-          professionals and students to enjoy delicious tiffin meals every day.
-          With three food options and a special discount for students, it’s the
-          perfect solution for anyone looking for convenient and affordable meal
-          delivery.
+          Authentic Indian tiffin, made with love. Fresh, healthy, and perfectly
+          balanced.
         </p>
         <div className={classes.buttons}>
-          <button className="primary">Order Now</button>
+          <button className="primary" onClick={handleClick}>
+            Explore Plans
+          </button>
           {/* <button className="secondary">Explore Plans</button> */}
         </div>
       </div>
-      <div className={classes.right}>
-        <div className={classes["img-frame"]}>
-          <img
-            className={classes["hero-img"]}
-            src={heroImage}
-            alt="tiffin box"
-          />
-        </div>
+      <div className={classes["right-container"]}>
+        <img
+          className={classes["hero-img"]}
+          src={heroImage}
+          alt="plate with multiple indian food items"
+        />
       </div>
     </section>
   );

@@ -1,49 +1,82 @@
-.wrapper {
-  padding: 1rem;
-  min-height: 100vh;
+.page-container {
+  padding-bottom: 3rem;
 }
-
-.wrapper h1 {
-  padding: 2rem;
+.heading {
+  padding: 1rem;
   line-height: 1;
   text-align: center;
-  color: var(--color-gray-800);
 }
 
 .container {
+  width: 90%;
   margin: auto;
-  border: solid 2px var(--color-gray-800);
+  border: solid 2px var(--color-gray-900);
   border-radius: 10px;
   padding: 1rem;
-  /* box-shadow: 0px 0px 5px var(--color-gray-300); */
   display: flex;
   flex-wrap: wrap;
-  width: 1000px;
 }
 
-.container h2 {
+.container h2,
+h3,
+h4 {
   padding: 1rem;
   text-align: center;
-  color: var(--color-gray-800);
+  color: var(--color-gray-900);
 }
 
 .left-container {
+  flex: 1 1 300px;
   border-right: dashed 1px var(--color-gray-300);
+  padding: 0 1rem;
+}
+
+.plan-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.plan-img-container {
+  flex: 1 1 40;
+  width: 40%;
+  padding: 0 2rem;
+  border-right: dashed 1px var(--color-gray-900);
+}
+
+.plan-items ul {
+  flex: 1 1 40%;
+  padding-left: 2rem;
+}
+.plan-items li {
+  padding: 0.2rem;
+}
+.plan-items img {
+  width: 100%;
+}
+
+.plan-details-container p {
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+
+.right-container {
   flex: 1 1 300px;
   padding: 0 1rem;
 }
 
-.left-container form {
-  padding: 2rem 0;
+.plan-sub-form {
+  padding-bottom: 2rem;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  color: var(--color-gray-700);
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  color: var(--color-gray-900);
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -54,30 +87,15 @@
 .input-group select,
 .input-group input {
   font-family: inherit;
-  font-size: 1rem;
-  width: 15rem;
+  font-size: 0.9rem;
+  width: 12rem;
   border: solid 1.5px var(--color-gray-300);
   border-radius: 5px;
   padding: 0.25rem;
 }
 
-.btns-container {
-  padding: 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.btns-container button {
-  padding: 0.5rem 2rem;
-}
-.right-container {
-  flex: 1 1 300px;
-  padding: 0 1rem;
-}
-
 .sub-container {
-  padding: 2rem 0 1rem 1rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,7 +104,7 @@
 
 .sub-container p {
   font-weight: 600;
-  color: var(--color-gray-700);
+  color: var(--color-gray-900);
   display: flex;
   justify-content: space-between;
 }
@@ -98,4 +116,19 @@
 .total-price {
   border-top: solid 1px var(--color-gray-500);
   padding: 1rem 0;
+}
+
+.right-container form {
+  text-align: center;
+}
+
+.overlay {
+  padding: 6rem 2rem;
+  background: rgba(0, 0, 0, 0.91);
+  width: 100vw;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }

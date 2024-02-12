@@ -1,18 +1,23 @@
-.section2 {
-  /* background-color: var(--color-primary-50); */
-  background-color: var(--color-gray-100);
-}
-
-.section2 h2 {
-  text-align: center;
-  line-height: 1;
+.section2-container {
+  background-color: #d0ebf5;
   padding: 2rem;
 }
 
-.reasons {
-  padding: 0 2rem;
+.section2-heading {
+  text-align: center;
+  padding: 1rem;
+}
+
+.reasons-container {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.reasons-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
   gap: 2rem;
 }

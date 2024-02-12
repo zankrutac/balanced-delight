@@ -1,5 +1,6 @@
 .plan-card {
   flex: 1 1 250px;
+  /* flex-basis: 250px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -13,11 +14,8 @@
   text-align: center;
   width: 100%;
   border-radius: 10px 10px 0 0;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
-
-/* .plan-card header {
-} */
 
 .header-v {
   background-color: var(--color-primary-100);
@@ -60,4 +58,7 @@
 .plan-card li {
   text-align: center;
   padding: 0.25rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
 }

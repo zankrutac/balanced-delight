@@ -1,8 +1,8 @@
 import classes from "./ReviewCard.module.css";
 
-function ReviewCard({ details }) {
+function ReviewCard({ details, id }) {
   return (
-    <li className={classes.review}>
+    <li className={`${classes.review} ${classes[`bg-color${id}`]}`}>
       <p>{details.review}</p>
       <div className={classes["author-section"]}>
         <img
