@@ -9,6 +9,10 @@ export default function MainNavigation() {
   function handleToggleMenu() {
     setIsMenuOpen((prevState) => setIsMenuOpen(!prevState));
   }
+
+  function handleCloseMobileMenu() {
+    setIsMenuOpen(false);
+  }
   return (
     <header className={classes["navbar-container"]}>
       <Link to="/">
@@ -23,6 +27,7 @@ export default function MainNavigation() {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              onClick={handleCloseMobileMenu}
             >
               Home
             </NavLink>
@@ -33,6 +38,7 @@ export default function MainNavigation() {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              onClick={handleCloseMobileMenu}
             >
               Plans
             </NavLink>
@@ -43,6 +49,7 @@ export default function MainNavigation() {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              onClick={handleCloseMobileMenu}
             >
               About Us
             </NavLink>
